@@ -42,11 +42,5 @@ if password:
             st.write("- Missing symbol")
     elif count_uppercase >= 1 or count_digits >= 1 or count_symbols >= 1:
         st.error("Password is weak ")
-        if count_uppercase < 1:
-            st.write("- Missing uppercase letter")
-        if count_digits < 1:
-            st.write("- Missing digit")
-        if count_symbols < 1:
-            st.write("- Missing symbol")
     else:
         st.error("This is not a valid password format")
